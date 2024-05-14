@@ -18,11 +18,8 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
-    "@cloudinary/angular-5.x": "^1.5.3",
     "@cloudinary/ng": "^2.0.2",
     "@cloudinary/url-gen": "^1.19.0",
-    "cloudinary-core": "^2.13.1",
-    "ngx-img-cropper": "^14.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

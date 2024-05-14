@@ -1,8 +1,5 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { environment } from './../environments/environment.development';
-import { RouterOutlet } from '@angular/router';
-// Import the CloudinaryModule.
 import { Cloudinary, CloudinaryImage } from '@cloudinary/url-gen';
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import {focusOn} from "@cloudinary/url-gen/qualifiers/gravity";
@@ -85,15 +82,9 @@ export class AppComponent {
       formData.append('file', file);
       formData.append('upload_preset', this.uploadPreset);
 
-    const cloudinaryApiKey = environment.cloudinaryApiKey;
-    const cloudinaryApiSecret = environment.cloudinaryApiSecret;
-
-    const headers = new Headers();
-    headers.append('Authorization', `Basic ${btoa(`${cloudinaryApiKey}:${cloudinaryApiSecret}`)}`);
 
       fetch(`https://api.cloudinary.com/v1_1/${this.cloudName}/upload`, {
         method: 'POST',
-        headers: headers,
         body: formData
       })
         .then(response => response.json())
