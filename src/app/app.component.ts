@@ -1,4 +1,4 @@
-import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Cloudinary, CloudinaryImage } from '@cloudinary/url-gen';
 import {fill} from "@cloudinary/url-gen/actions/resize";
@@ -38,7 +38,7 @@ const autoGravityCropping = (imageId: string) => {
 
     <div *ngIf="originalImageUrl">
       <h2>Original Image</h2>
-      <img [src]="originalImageUrl" alt="Original Image" />
+      <img [src]="originalImageUrl" alt="Original Image"  style="width: 50vw;"/>
     </div>
 
     <div *ngIf="fillCroppingWithFacesUrl">
