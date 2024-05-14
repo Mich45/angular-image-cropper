@@ -61,8 +61,8 @@ export class AppComponent {
   customGravityCroppingUrl: string | null = null;
   aspectRatioCroppingUrl: string | null = null;
 
-  cloudName = 'cloudinarymich'; // Replace with your Cloudinary cloud name
-  uploadPreset = 'new-preset'; // Replace with your Cloudinary upload preset
+  cloudName = '<YOUR_CLOUDINARY_CLOUDNAME>'; // Replace with your Cloudinary cloud name
+	uploadPreset = 'YOUR_UPLAOD_PRESET_NAME'; // Replace with your Cloudinary upload preset
 
   onFileSelected(event: any) {
     const file = event.target.files[0];
